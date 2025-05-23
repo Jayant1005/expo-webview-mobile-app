@@ -9,19 +9,18 @@ import {
   ActivityIndicator,
 } from "react-native";
 import { WebView } from "react-native-webview";
-import { StatusBar } from "expo-status-bar"; // Import StatusBar
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
-  // Your computer's local IPv4 address (from `ipconfig` output)
-  // VERIFY THIS IP ADDRESS AGAIN BEFORE RUNNING (from your latest ipconfig, it was 192.168.84.188)
-  const localIpAddress = "192.168.84.188"; // Replace with your actual IP or deployed Next.js URL
-  const urlToLoad = `http://${localIpAddress}:3000`; // Adjust if using a deployed URL
+  // *** IMPORTANT: This MUST be your deployed Next.js web app's URL from Vercel ***
+  const urlToLoad =
+    "https://vercel.com/jayantsolao05-gmailcoms-projects/nextjs-webview-web-app"; // PASTE YOUR ACTUAL VERCEL URL HERE
 
   console.log("Loading WebView with URL:", urlToLoad);
 
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" /> {/* Add StatusBar for better appearance */}
+      <StatusBar style="auto" />
       <WebView
         source={{ uri: urlToLoad }}
         style={styles.webview}
@@ -62,7 +61,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0, // Dynamic padding for Android status bar
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   webview: {
     flex: 1,
