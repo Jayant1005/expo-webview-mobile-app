@@ -4,6 +4,7 @@ This repository contains the mobile application component of a hybrid applicatio
 
 This project demonstrates how to effectively combine the power of web technologies with the reach and capabilities of native mobile platforms, allowing for dynamic content updates without requiring app store updates.
 
+{ Note: The basic Functioning of this project has been done. The designing part for this website is underway. I hope you will wait till the updation on this project. }
 ## ✨ Features
 
 * **Native WebView Integration:** Seamlessly loads and displays a live web application within the mobile environment.
